@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>QRCODE</title>
+    <script type="text/javascript" src="src/js/llqrcode.js"></script>
+    <script type="text/javascript" src="src/js/qrcode.js"></script>
+  </head>
+  <body>
+    <body>
+    <div id="main">
+      <div id="mainbody" style="display: inline;">
+        <table class="tsel" border="0" width="100%">
+          <tbody>
+            <tr>
+              <td valign="top" align="center" width="50%">
+                <table class="tsel" border="0">
+                  <tbody>
+                    <tr>
+                      <td><img class="selector" id="webcamimg" src="vid.png" onclick="setwebcam()" align="left" style="opacity: 1;"></td>
+                      <td><img class="selector" id="qrimg" src="cam.png" onclick="setimg()" align="right" style="opacity: 0.2;"></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" align="center">
+                        <div id="outdiv">
+                          <video id="v" autoplay=""></video>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" align="center">
+                <div id="result">- scanning -</div>
+                <button type="button" name="button" onclick="reset()">reset</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+    </div>&nbsp;
+    <canvas id="qr-canvas" width="800" height="600" style="width: 800px; height: 600px; display: none"></canvas>
+    <script type="text/javascript">load();</script>
+
+
+  </body>
+</html>
